@@ -1,0 +1,1 @@
+ gcc -ansi -pedantic -Wall Projc.c problema1.c problema2.c problema3.c base.c -o Projc

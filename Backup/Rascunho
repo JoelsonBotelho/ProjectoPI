@@ -1,0 +1,30 @@
+char escolheProblema(char escolhe[6])
+{
+	int i = 0;
+	char  prob[6], probn;
+	strcpy(prob, escolhe);
+        while(prob[i]!='\0')
+        {
+                if(isdigit(prob[i]))
+                {
+                        probn = prob[i];
+                        break;
+                }
+                 i++;
+        }
+        switch(probn)
+        {
+                case '1':
+                printf("caso 1");
+                break;
+                case '2':
+                printf("caso 2");
+                break;
+                case '3':
+                printf("caso 3");
+                break;
+		default:
+		mostrarDocumentacao();
+        }
+	return 0;
+}
